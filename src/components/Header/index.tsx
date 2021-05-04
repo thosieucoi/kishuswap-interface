@@ -23,10 +23,7 @@ import Menu from '../Menu'
 import Row, { RowFixed } from '../Row'
 import Web3Status from '../Web3Status'
 import ClaimModal from '../claim/ClaimModal'
-import { useToggleSelfClaimModal, useShowClaimPopup } from '../../state/application/hooks'
 import { useUserHasAvailableClaim } from '../../state/claim/hooks'
-import { useUserHasSubmittedClaim } from '../../state/transactions/hooks'
-import { Dots } from '../swap/styleds'
 import Modal from '../Modal'
 import UniBalanceContent from './UniBalanceContent'
 import usePrevious from '../../hooks/usePrevious'
@@ -302,16 +299,11 @@ export default function Header() {
   // const [isDark] = useDarkModeManager()
   const [darkMode, toggleDarkMode] = useDarkModeManager()
 
-  const toggleClaimModal = useToggleSelfClaimModal()
-
   const availableClaim: boolean = useUserHasAvailableClaim(account)
-
-  const { claimTxn } = useUserHasSubmittedClaim(account ?? undefined)
 
   const aggregateBalance: TokenAmount | undefined = useAggregateUniBalance()
 
   const [showUniBalanceModal, setShowUniBalanceModal] = useState(false)
-  const showClaimPopup = useShowClaimPopup()
 
   const countUpValue = aggregateBalance?.toFixed(0) ?? '0'
   const countUpValuePrevious = usePrevious(countUpValue) ?? '0'
