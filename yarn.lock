@@ -2126,6 +2126,11 @@
   dependencies:
     "@json-rpc-tools/types" "^1.6.1"
 
+"@kishu-inu/kishu-token-list@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@kishu-inu/kishu-token-list/-/kishu-token-list-1.0.1.tgz#4cde046f57c5663cd34ed583baf952fdf5c1dc6b"
+  integrity sha512-X9vpE/EF7SRPginpTdzn5mf76d5tR2G9pCvSn4B6FWAKEWNZZKRvERwyoKmq1Y3+nxUnHbYafgHXFpsNo8ZCJQ==
+
 "@metamask/safe-event-emitter@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@metamask/safe-event-emitter/-/safe-event-emitter-2.0.0.tgz#af577b477c683fad17c619a78208cede06f9605c"
@@ -2867,11 +2872,6 @@
     lodash "^4.17.15"
     semver "^7.3.2"
     tsutils "^3.17.1"
-
-"@uniswap/default-token-list@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@uniswap/default-token-list/-/default-token-list-2.0.0.tgz#095b4c22635e532c817c3ba70e8838d8bd699716"
-  integrity sha512-P37PqBtUjEB9DIRFfmEsgougkV0555JQKiGPISeN9UFk1UgCQM5sg6+bBaShiyaqEpdtttAaBFI1QESCzPGvXw==
 
 "@uniswap/governance@^1.0.2":
   version "1.0.2"

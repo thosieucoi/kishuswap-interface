@@ -85,7 +85,7 @@ const MenuItem = styled(ExternalLink)`
   }
 `
 
-const CODE_LINK = 'https://github.com/Uniswap/uniswap-interface'
+const CODE_LINK = 'https://github.com/Kishu-Inu/kishuswap-interface'
 
 export default function Menu() {
   const { account } = useActiveWeb3React()
@@ -105,13 +105,9 @@ export default function Menu() {
 
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://uniswap.org/">
+          <MenuItem id="link" href="https://kishu.finance/">
             <Info size={14} />
             About
-          </MenuItem>
-          <MenuItem id="link" href="https://uniswap.org/docs/v2">
-            <BookOpen size={14} />
-            Docs
           </MenuItem>
           <MenuItem id="link" href={CODE_LINK}>
             <Code size={14} />
@@ -125,11 +121,11 @@ export default function Menu() {
             <PieChart size={14} />
             Analytics
           </MenuItem>
-          {account && (
+          {/* {account && (
             <ButtonPrimary onClick={openClaimModal} padding="8px 16px" width="100%" borderRadius="12px" mt="0.5rem">
               Claim UNI
             </ButtonPrimary>
-          )}
+          )} */}
         </MenuFlyout>
       )}
     </StyledMenu>
