@@ -19,7 +19,7 @@ const ContentWrapper = styled(AutoColumn)`
 
 const ModalUpper = styled(DataCard)`
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #ff007a 0%, #021d43 100%);
+  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #fddb43 0%, #021d43 100%);
   padding: 0.5rem;
 `
 
@@ -62,7 +62,7 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
           <>
             <CardSection gap="sm">
               <AutoColumn gap="md" justify="center">
-                <UniTokenAnimated width="48px" src={tokenLogo} />{' '}
+                <UniTokenAnimated width="96px" src={tokenLogo} />{' '}
                 <TYPE.white fontSize={48} fontWeight={600} color="white">
                   {total?.toFixed(0, { groupSeparator: ',' })} B
                 </TYPE.white>
