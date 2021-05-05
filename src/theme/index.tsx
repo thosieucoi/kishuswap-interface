@@ -103,9 +103,6 @@ export function theme(darkMode: boolean): DefaultTheme {
     //shadows
     shadow1: darkMode ? '#000' : '#2F80ED',
 
-    // paw backgrounds
-    pawImage: darkMode ? darkPaws : lightPaws,
-
     // media queries
     mediaWidth: mediaWidthTemplates,
 
@@ -232,7 +229,7 @@ body {
   background-position: center , 0 -30vh;
   background-repeat: no-repeat;
   background-image: ${({ theme }) =>
-    `url(${theme.pawImage}),
+    `url(${theme.text1 == '#FFFFFF' ? darkPaws : lightPaws}),
       radial-gradient(50% 50% at 50% 50%, ${transparentize(0.9, theme.primary1)} 0%, ${transparentize(
       1,
       theme.bg1
