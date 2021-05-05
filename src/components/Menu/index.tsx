@@ -113,9 +113,9 @@ export default function Menu() {
             <Code size={14} />
             Code
           </MenuItem>
-          <MenuItem id="link" href="https://discord.gg/FCfyBSbCU5">
+          <MenuItem id="link" href="https://t.me/kishuinucommunity">
             <MessageCircle size={14} />
-            Discord
+            Telegram
           </MenuItem>
           <MenuItem id="link" href="https://uniswap.info/">
             <PieChart size={14} />
