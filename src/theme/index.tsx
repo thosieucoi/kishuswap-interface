@@ -229,7 +229,7 @@ body {
   background-position: center , 0 -30vh;
   background-repeat: no-repeat;
   background-image: ${({ theme }) =>
-    `url(${theme.text1 == '#FFFFFF' ? darkPaws : lightPaws}),
+    `url(${theme.text1 === '#FFFFFF' ? darkPaws : lightPaws}),
       radial-gradient(50% 50% at 50% 50%, ${transparentize(0.9, theme.primary1)} 0%, ${transparentize(
       1,
       theme.bg1
