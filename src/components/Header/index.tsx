@@ -321,6 +321,9 @@ export default function Header() {
           </UniIcon>
         </Title>
         <HeaderLinks>
+          <StyledNavLink as="a" href="https://kishu.finance/" target="_blank">
+            Home
+          </StyledNavLink>
           <StyledNavLink id={`swap-nav-link`} to={'/swap'}>
             {t('swap')}
           </StyledNavLink>
